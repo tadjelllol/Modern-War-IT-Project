@@ -1,0 +1,159 @@
+body {
+    background-image: url('Map.png');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #222;
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #8b0000;
+  }
+
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;  
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+
+  nav li {
+    margin: 0 1rem;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+    
+  }
+
+  #banner {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  #banner h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  #about {
+    margin: 2rem 0;
+  }
+
+  #about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  #news {
+    margin: 2rem 0;
+    color: #fff;
+  }
+
+  #news h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  #news article {
+    margin-bottom: 2rem;
+  }
+
+  #news h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  #news p {
+    margin-bottom: 0.5rem;
+  }
+
+  #resources {
+    margin: 2rem 0;
+  }
+
+  #resources h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  #resources ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  #resources li {
+    margin-bottom: 1rem;
+  }
+
+  #resources a {
+    color: #ffffff;
+    text-decoration: none;
+    
+  }
+
+  #resources a:hover {
+    color: #8b0000;
+    
+  }
+
+  footer {
+    background-color: #8b0000 ;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+
+  footer nav ul {
+    display: flex;
+    list-style: none;
+  }
+
+  footer nav li {
+    margin: 0 1rem;
+  }
+
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #555;
+  }
+
+  footer {
+    background-color: #8b0000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
