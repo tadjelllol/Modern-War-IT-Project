@@ -17,13 +17,49 @@
       </ul>
     </nav>
   </header>
-  <div id="question-form">
-    <h2>Ask a question:</h2>
-    <form method="post">
-      <input type="text" name="question" placeholder="Enter your question here...">
-      <button type="submit">Submit</button>
+  <div id="search-container">
+    <form onsubmit="askQuestion(event)">
+      <input type="text" id="question-input" placeholder="Enter your question here...">
+      <button type="submit">Search</button>
     </form>
   </div>
-  <form method="post" action="submit.php">
+  
+  <div id="answer-container" style="display:none;">
+    <div id="answer-box">
+      <p id="answer-text"></p>
+    </div>
+  </div>
+  
+  <script>
+    async function askQuestion(event) {
+      event.preventDefault();
+      const question = document.getElementById("question-input").value;
+      const apiKey = "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";
+      const modelId = "davinci";
+      const prompt = `Q: ${question}\nA:`;
+  
+      const response = await fetch(`https://api.openai.com/v1/engines/${modelId}/completions`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${apiKey}`,
+        },
+        body: JSON.stringify({
+          prompt: prompt,
+          max_tokens: 100,
+          temperature: 0.5,
+          n: 1,
+          stop: ["\n"],
+        }),
+      });
+  
+      const data = await response.json();
+      const answer = data.choices[0].text.trim();
+  
+      document.getElementById("answer-container").style.display = "block";
+      document.getElementById("answer-text").textContent = answer;
+    }
+  </script>
+  
 </body>
 </html>

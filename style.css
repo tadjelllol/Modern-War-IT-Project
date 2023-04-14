@@ -259,3 +259,52 @@ body {
   .resource-link:hover span {
     opacity: 1;
   }
+
+  #search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  form {
+    display: flex;
+  }
+  
+  #question-input {
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin-right: 10px;
+  }
+  
+  button {
+    border: none;
+    background-color: #ffa500;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #answer-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  #answer-box {
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #333;
+    max-width: 80%;
+    word-wrap: break-word;
+  }
+  
+  #answer-text {
+    color: white;
+    font-size: 16px;
+  }
+  
